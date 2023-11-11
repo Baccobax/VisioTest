@@ -1,0 +1,32 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Article 1",
+      "content": "Lorem ipsum dolor sit amet, co",
+      "author": "Cloud Strife",
+      "date": "2017-01-01"
+    },
+    {
+      "id": 2,
+      "title": "Article 2",
+      "content": "nsectetur adipisci elit, sed do eiusmod tempo",
+      "author": "John Doe",
+      "date": "2017-02-02"
+    },
+    {
+      "id": 81218,
+      "title": "aaaa",
+      "content": "aaaa",
+      "author": "aaaa",
+      "date": "2023-11-11"
+    },
+    {
+      "id": 80272,
+      "title": "Title test",
+      "content": "Body test",
+      "author": "Author test",
+      "date": "2023-10-30"
+    }
+  ]
+}
