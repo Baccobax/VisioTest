@@ -10,7 +10,7 @@
         {
             "id": "dc74393b-9db5-4d93-8263-9325ba5bef5c",
             "title": "Markdown and WYSIWYG",
-            "content": "<p>Standard text<p><p><strong>Bold</strong></p><p><i>Italic</i></p><p><a href=\"https://www.visioscientiae.com/it\">Link</a></p><ul><li>dotted element<ul><li>indented element</li></ul></li></ul><ol><li>element<ol><li>indented element</li></ol></li><li>element<ol><li>indented element</li></ol></li></ol></p>",
+            "content": "<p>Standard text</p><p><strong>Bold</strong></p><p><i>Italic</i></p><p><a href=\"https://www.visioscientiae.com/it\">Link</a></p><ul><li>dotted element<ul><li>indented element</li></ul></li></ul><ol><li>element<ol><li>indented element</li></ol></li><li>element<ol><li>indented element</li></ol></li></ol></p>",
             "author": "Bandino Michael",
             "date": "2023-11-12T17:18:41.888Z"
         }
