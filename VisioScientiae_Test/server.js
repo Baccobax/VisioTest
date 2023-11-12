@@ -3,6 +3,7 @@ const path = require('path');
 const db = require('./db.json');
 const cors = require('cors');
 const fs = require('fs');
+const { v4: uuidv4 } = require('uuid');
 
 const app = express();
 
@@ -15,9 +16,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:id', (req, res) => {
-  const found = db.articles.some(article => article.id === parseInt(req.params.id))
+  const found = db.articles.some(article => article.id === req.params.id)
   if (found) {
-    res.json(db.articles.find(article => article.id === parseInt(req.params.id)))
+    res.json(db.articles.find(article => article.id === req.params.id))
   } else {
     res.status(400).json({ msg: `No article with the id of ${req.params.id}` })
   }
@@ -26,7 +27,7 @@ app.get('/:id', (req, res) => {
 
 app.post('/NewArticle', (req, res) => {
   const newArticle = {
-    id: db.articles.length + 1,
+    id: uuidv4(),
     title: req.body.title,
     content: req.body.content,
     author: req.body.author,

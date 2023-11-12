@@ -1,25 +1,18 @@
 {
     "articles": [
         {
-            "id": 1,
-            "title": "Test article",
-            "content": "In the ever-evolving digital landscape, web applications have become an integral part of our daily lives. Whether it's for social networking, online shopping, or content sharing, web apps have revolutionized the way we interact with the internet. One particular genre of web applications that has gained immense popularity is the humble blog platform. With the aim of demonstrating the capabilities of a cutting-edge blog web app, we've created this test article to provide a comprehensive overview of the app's functionalities and features.",
+            "id": "e4362635-81f2-461e-b158-242c98c616dc",
+            "title": "Blog article functionalities showcase",
+            "content": "<h3>Introduction</h3><p>In the ever-evolving digital landscape, web applications have become an integral part of our daily lives. Whether it's for social networking, online shopping, or content sharing, web apps have revolutionized the way we interact with the internet. One particular genre of web applications that has gained immense popularity is the humble blog platform. With the aim of demonstrating the capabilities of a cutting-edge blog web app, we've created this test article to provide a comprehensive overview of the app's functionalities and features.</p><h4>The Blog Web App: A Glimpse</h4><p>The blog web app in question is a <strong>sophisticated and user-friendly</strong> platform that empowers individuals and organizations to create, manage, and share their thoughts, experiences, and insights with a global audience. As technology continues to advance, these web applications are becoming increasingly versatile, catering to the diverse needs of <i>bloggers </i>and <i>content creators</i>.</p>",
             "author": "Cloud Strife",
-            "date": "2023-11-12T16:48:08.645Z"
+            "date": "2023-11-12T16:13:37.070Z"
         },
         {
-            "id": 2,
-            "title": "test",
-            "content": "test",
-            "author": "teste",
-            "date": "2023-11-12T16:48:08.645Z"
-        },
-        {
-            "id": 3,
-            "title": "Test article 2.0",
-            "content": "test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body ",
-            "author": "Test author 2.0",
-            "date": "2023-11-12T17:01:51.932Z"
+            "id": "dc74393b-9db5-4d93-8263-9325ba5bef5c",
+            "title": "Markdown and WYSIWYG",
+            "content": "<p>Standard text<p><p><strong>Bold</strong></p><p><i>Italic</i></p><p><a href=\"https://www.visioscientiae.com/it\">Link</a></p><ul><li>dotted element<ul><li>indented element</li></ul></li></ul><ol><li>element<ol><li>indented element</li></ol></li><li>element<ol><li>indented element</li></ol></li></ol></p>",
+            "author": "Bandino Michael",
+            "date": "2023-11-12T17:18:41.888Z"
         }
     ]
 }

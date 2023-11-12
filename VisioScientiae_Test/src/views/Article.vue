@@ -5,7 +5,7 @@
 		<div class="ms-1">
 			<p class="articleInfo">Author: {{ articleData?.author }}</p>
 			<p class="articleInfo">Date of creation: {{ formattedDate() }}</p>
-			<p class="articleContent">{{ articleData?.content }}</p>
+			<p class="articleContent" v-html="articleData?.content" />
 		</div>
 	</div>
 </template>
@@ -25,7 +25,7 @@
 			}
 		},
 		async mounted(){
-			this.articleData = await this.articleStore.fetchArticleWithId(parseInt(this.$route.params.id as string)) as ArticleInterface
+			this.articleData = await this.articleStore.fetchArticleWithId(this.$route.params.id as string) as ArticleInterface
 		},
 		components: {
 			HomeButton,
@@ -33,7 +33,7 @@
 		methods: {
 			formattedDate()
 			{
-				return this.articleData ? dayjs(this.articleData.date).format('DD/MM/YYYY') : ''
+				return this.articleData ? dayjs(this.articleData.date).format('DD/MM/YYYY HH:mm') : ''
 			},
 		},
     }

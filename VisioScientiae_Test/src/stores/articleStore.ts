@@ -4,14 +4,14 @@ import type { ArticleInterface } from '@/model/Interfaces';
 
 export const useArticleStore = defineStore('articleStore' ,{
     state: () => ({
-        id: 0 as number,
+        id: "-" as string,
         articles: [] as ArticleInterface[],
     }),
     actions: {
-        storeArticle(id: number){
+        storeArticle(id: string){
             this.id = id
         },
-        async fetchArticleWithId(id : number): Promise<ArticleInterface>{
+        async fetchArticleWithId(id : string): Promise<ArticleInterface>{
             const res = await fetch(`http://localhost:5000/${id}`);
             const dbData = await res.json();
             return dbData;
