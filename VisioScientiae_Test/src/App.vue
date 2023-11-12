@@ -1,8 +1,10 @@
 <template>
-	<div>
+	<div id="layout-wrapperVisio">
 		<Header />
-		<router-view></router-view>
-		<Footer />
+		<div class="main-contentVisio">
+			<router-view></router-view>
+		</div>
+		<Footer class="footer" />
 	</div>
 </template>
 
@@ -34,31 +36,15 @@
 </script>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
+	#layout-wrapperVisio{
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		background-color: rgba(245, 245, 245, 0);
+	}
 
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+	.main-contentVisio{
+		flex-grow: 1;
+		
+	}
 </style>

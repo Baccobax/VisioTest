@@ -3,7 +3,7 @@
         <ArticleHead :articleHead="articleHead" />
     </div>
     <div>
-        <h1 v-show = "articleStore.articles.length === 0">No Articles to Show</h1>
+        <h1 class="articleContent ms-3" v-show = "articleStore.articles.length === 0">No Articles to Show</h1>
     </div>
 </template>
 

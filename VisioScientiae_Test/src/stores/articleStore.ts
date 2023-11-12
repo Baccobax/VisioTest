@@ -16,12 +16,13 @@ export const useArticleStore = defineStore('articleStore' ,{
             const dbData = await res.json();
             return dbData;
         },
-        async fetchArticles(){
+        async fetchArticles(): Promise<ArticleInterface>{
             const res = await fetch('http://localhost:5000/');
             const data = await res.json();
             this.articles = data;
+            return data;
         },
-        async postArticle(article: ArticleInterface){
+        async postArticle(article: ArticleInterface): Promise<ArticleInterface>{
             const res = await fetch('http://localhost:5000/NewArticle', {
                 method: 'POST',
                 headers: {
@@ -29,6 +30,8 @@ export const useArticleStore = defineStore('articleStore' ,{
                 },
                 body: JSON.stringify(article)
             })
+            this.fetchArticles();
+            return res.json();
         },
     },
     getters: {

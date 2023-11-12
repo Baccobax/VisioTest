@@ -1,32 +1,25 @@
 {
-  "articles": [
-    {
-      "id": 1,
-      "title": "Article 1",
-      "content": "Lorem ipsum dolor sit amet, co",
-      "author": "Cloud Strife",
-      "date": "2017-01-01"
-    },
-    {
-      "id": 2,
-      "title": "Article 2",
-      "content": "nsectetur adipisci elit, sed do eiusmod tempo",
-      "author": "John Doe",
-      "date": "2017-02-02"
-    },
-    {
-      "id": 81218,
-      "title": "aaaa",
-      "content": "aaaa",
-      "author": "aaaa",
-      "date": "2023-11-11"
-    },
-    {
-      "id": 80272,
-      "title": "Title test",
-      "content": "Body test",
-      "author": "Author test",
-      "date": "2023-10-30"
-    }
-  ]
+    "articles": [
+        {
+            "id": 1,
+            "title": "Test article",
+            "content": "In the ever-evolving digital landscape, web applications have become an integral part of our daily lives. Whether it's for social networking, online shopping, or content sharing, web apps have revolutionized the way we interact with the internet. One particular genre of web applications that has gained immense popularity is the humble blog platform. With the aim of demonstrating the capabilities of a cutting-edge blog web app, we've created this test article to provide a comprehensive overview of the app's functionalities and features.",
+            "author": "Cloud Strife",
+            "date": "2023-11-12T16:48:08.645Z"
+        },
+        {
+            "id": 2,
+            "title": "test",
+            "content": "test",
+            "author": "teste",
+            "date": "2023-11-12T16:48:08.645Z"
+        },
+        {
+            "id": 3,
+            "title": "Test article 2.0",
+            "content": "test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body test body ",
+            "author": "Test author 2.0",
+            "date": "2023-11-12T17:01:51.932Z"
+        }
+    ]
 }

@@ -1,4 +1,16 @@
-
+.articleTitle{
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+.articleInfo{
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.articleContent{
+    font-family:Georgia, 'Times New Roman', Times, sans-serif;
+}
 
 
 

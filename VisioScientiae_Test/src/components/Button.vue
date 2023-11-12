@@ -1,21 +1,14 @@
 <template>
-    <button v-show="homePage"> {{ titleButton }} </button>
+    <RouterLink v-show="homePage" class="btn btn-outline-light"  :to="{name: 'NewArticle'}" >
+        New Article
+    </RouterLink>
 </template>
 
 <script lang="ts">
-    import Button from './Button.vue';
 
     export default
     {
         name : 'Button',
-        props:
-        {
-            titleButton:
-            {
-                type: String,
-                default: "Button"
-            }
-        },
         computed:
         {
             homePage()

@@ -1,21 +1,20 @@
 <template>
-	<div>
-		<h1 class="title">{{ articleData?.title }}</h1>
-		<p class="author">{{ articleData?.author }}</p>
-		<p class="date">{{ articleData?.date }}</p>
-		<p class="content">{{ articleData?.content }}</p>
-	</div>
-	<div>
-		<router-link to="/" class="btn">Back</router-link>
+	<HomeButton />
+	<div class="ms-2">
+		<h1 class="articleTitle">{{ articleData?.title }}</h1>
+		<div class="ms-1">
+			<p class="articleInfo">Author: {{ articleData?.author }}</p>
+			<p class="articleInfo">Date of creation: {{ formattedDate() }}</p>
+			<p class="articleContent">{{ articleData?.content }}</p>
+		</div>
 	</div>
 </template>
 
 <script lang="ts">
-	import Header from '../components/Header.vue'
-    import Footer from '../components/Footer.vue'
+	import HomeButton from '@/components/HomeButton.vue'
 	import { useArticleStore } from '@/stores/articleStore'
-	import { useRoute } from 'vue-router'
 	import { type ArticleInterface }  from '@/model/Interfaces'
+	import dayjs, { Dayjs } from 'dayjs'
 
     export default {
 		name: 'Article',
@@ -25,18 +24,17 @@
 				articleData: undefined as ArticleInterface | undefined,
 			}
 		},
-		components: {
-			Header,
-			Footer,
-		},
-		props: {
-			
-		},
 		async mounted(){
-			this.articleData = await useArticleStore().fetchArticleWithId(parseInt(this.$route.params.id as string)) as ArticleInterface
+			this.articleData = await this.articleStore.fetchArticleWithId(parseInt(this.$route.params.id as string)) as ArticleInterface
+		},
+		components: {
+			HomeButton,
 		},
 		methods: {
-			
+			formattedDate()
+			{
+				return this.articleData ? dayjs(this.articleData.date).format('DD/MM/YYYY') : ''
+			},
 		},
     }
-</script>   
+</script>

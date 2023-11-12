@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const db = require('./db.json');
 const cors = require('cors');
+const fs = require('fs');
 
 const app = express();
 
@@ -29,13 +30,17 @@ app.post('/NewArticle', (req, res) => {
     title: req.body.title,
     content: req.body.content,
     author: req.body.author,
-    date: req.body.date
+    date: new Date()
   }
   if (!newArticle.title || !newArticle.content || !newArticle.author || !newArticle.date) {
     return res.status(400).json({ msg: 'Please include a title, content, author and date' })
   }
-  db.articles.push(newArticle)
-  
+  db.articles.push(newArticle);
+
+  fs.writeFile('./db.json', JSON.stringify(db), (err) => {
+    if (err) throw err;
+    console.log('The file has been saved!');
+  });
 });
 
 

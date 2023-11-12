@@ -1,9 +1,7 @@
 <template>
-    <header>
-        <h1 id = "titleText"> {{title}} </h1>
-        <RouterLink to="NewArticle" >
-            <Button title-button="New Article"/>
-        </RouterLink>
+    <header class="bg-primary p-2">
+        <h1 id="titleText" class="text-light ms-2"> {{title}} </h1>
+        <Button class="me-2" />
     </header>
 </template>
 
@@ -29,13 +27,12 @@
 
 <style scoped>
     header{
-        background-color: grey;
         justify-content: space-between;
         align-items: center;
         display: flex;
         margin-bottom: 20px;
     }
     #titleText{
-        padding-left: 2%;
+        font-family: 'Times New Roman', Times, serif;
     }
 </style>

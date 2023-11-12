@@ -11,8 +11,6 @@
     import ArticleList from '../components/ArticleList.vue'
 	import { useArticleStore } from '@/stores/articleStore'
 
-	//const articleStore = useArticleStore()
-
     export default {
 		name: 'HomePage',
         components: {
