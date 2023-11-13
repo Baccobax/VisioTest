@@ -1,10 +1,12 @@
 <template>
 	<HomeButton />
-	<div class="ms-2">
-		<h1 class="articleTitle">{{ articleData?.title }}</h1>
-		<div class="ms-1">
-			<p class="articleInfo">Author: {{ articleData?.author }}</p>
+	<div class="m-2 card">
+		<h1 class="articleTitle card-header">{{ articleData?.title }}</h1>
+		<div class="ms-1 card-header">
+			<p class="articleInfo mt-3">Author: {{ articleData?.author }}</p>
 			<p class="articleInfo">Date of creation: {{ formattedDate() }}</p>
+		</div>
+		<div class="card-body ms-1">
 			<p class="articleContent" v-html="articleData?.content" />
 		</div>
 	</div>

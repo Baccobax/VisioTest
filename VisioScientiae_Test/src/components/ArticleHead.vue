@@ -1,12 +1,14 @@
 <template>
-    <div class="ms-2">
-        <div class="container-fluid">
-            <h1 class="articleTitle"> 
+    <div class="m-2 card">
+        <div class="m-2">
+            <h1 class="articleTitle card-header"> 
                 <router-link class="text-primary router-link" :to="{ name: `Article`, params: { id: articleHead.id } }">{{ articleHead.title }}</router-link>
             </h1>
-            <p class="h5 text-secondary articleInfo"> Written by <span class="authorBold">{{ articleHead.author }}</span></p>
-            <p class="h5 text-secondary articleInfo" v-html="introCutter(articleHead.content)"/>
-            <p class="h5 text-dark articleInfo">{{ formattedDate() }}</p>
+            <div class="card-body">
+                <p class="h5 text-secondary articleInfo"> Written by <span class="authorBold">{{ articleHead.author }}</span></p>
+                <p class="h5 text-secondary articleInfo" v-html="introCutter(articleHead.content)"/>
+                <p class="h5 text-dark articleInfo dateArticleLeft">{{ formattedDate() }}</p>
+            </div>
         </div>
     </div>
 </template>
@@ -63,5 +65,10 @@
 
     .authorBold{
         font-weight: bold;
+    }
+
+
+    .dateArticleLeft{
+        text-align: right;
     }
 </style>

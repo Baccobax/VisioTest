@@ -1,18 +1,18 @@
 <template>
   <HomeButton />
-    <form class="mt-2">
+    <form class="m-2">
       <div class="form-control">
-        <label>Title</label>
+        <label class="h3">Title</label>
         <input class="form-control form-control-check" type="text" v-model="title" name="text" placeholder="Add title" />
       </div>
       <div class="mt-2 form-control form-control-check">
-        <label>Author</label>
-        <input class="form-control form-control-check" type="text" v-model="author" name="author" placeholder="Author:" />
+        <label class="h3">Author</label>
+        <input class="form-control form-control-check" type="text" v-model="author" name="author" placeholder="Add author:" />
       </div>
-      <div class="m-2">
+      <div class="mt-2">
         <ckeditor class="form-control" :editor="editor" v-model="content" :config="editorConfig"></ckeditor>
       </div>
-      <button @click="onSubmit" class="d-flex btn btn-primary btn-lg ms-auto me-2"> Save Article </button>
+      <button @click="onSubmit" class="d-flex btn btn-primary btn-lg ms-auto mt-2 me-2"> Save Article </button>
     </form>
   </template>
   
